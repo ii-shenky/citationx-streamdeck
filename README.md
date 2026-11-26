@@ -124,7 +124,9 @@ The installer offers the library when it finds a Stream Deck +; the `.ppp` conta
 ## Credits
 - Profiles, script and artwork: **shiiden** (Iurii Boreev) — MIT License (see `LICENSE`)
 - PilotsDeck: **Fragtality**
-- Inspired by the Longitude profile by **aimoii**
+- Built on ideas from the [Longitude profile by **aimoii**](https://flightsim.to/addon/89328/msfs-2024-cessna-citation-longitude-stream-deck-profile):
+  the engine keys (N1 / ITT gauges), START / RUN, korry and single buttons, toggles, knobs and MASTER CAUTION / WARNING
+  follow his designs; the artwork in this package is redrawn
 - Fonts: Barlow Semi Condensed, Share Tech — SIL Open Font License (see `Fonts`)
 - Unofficial community profile; not affiliated with FlightFX, Textron Aviation, Elgato or Microsoft.
 
