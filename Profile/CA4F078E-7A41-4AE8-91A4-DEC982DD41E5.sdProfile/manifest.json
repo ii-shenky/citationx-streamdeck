@@ -1,0 +1,27 @@
+{
+  "Device": {
+    "Model": "20GBD9901",
+    "UUID": ""
+  },
+  "InstalledByPluginUUID": "com.extension.pilotsdeck",
+  "Name": "Citation X +",
+  "Pages": {
+    "Current": "7236b526-b1fb-452c-8c95-12985fe71972",
+    "Default": "d2fe5929-a8ca-46e7-9ed5-004aafc9ceee",
+    "Pages": [
+      "26f12b10-49ca-41d1-bebd-2926992b8fcf",
+      "7236b526-b1fb-452c-8c95-12985fe71972",
+      "bb434090-804b-4b54-95d2-01449af209c5",
+      "7583e4ee-7708-45d8-9f93-a7c2cfb825de",
+      "cdb410a9-67f8-4705-ad81-4faf1c845238",
+      "e0cf1a53-6693-453c-86e5-831f88a33bf3",
+      "e894bdde-e281-4e0d-9c66-0769532a5b99",
+      "429405e6-6508-4702-a6fa-0aecc139316b",
+      "28b8346e-7c10-4db8-8102-dd19272fe892",
+      "a5c77aa2-b9d8-4746-85f6-1d2817a23c15",
+      "ba0fa051-1466-443f-9582-dda09a691ac1"
+    ]
+  },
+  "PreconfiguredName": "Profiles/Citation X +",
+  "Version": "3.0"
+}

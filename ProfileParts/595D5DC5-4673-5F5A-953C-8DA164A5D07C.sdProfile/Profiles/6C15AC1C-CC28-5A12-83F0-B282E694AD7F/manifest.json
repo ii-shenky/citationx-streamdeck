@@ -1,0 +1,843 @@
+{
+ "Controllers": [
+  {
+   "Actions": {
+    "0,0": {
+     "ActionID": "8445ea50-305f-5a6e-8295-4da5565340a8",
+     "LinkedTitle": true,
+     "Name": "Composite Action",
+     "Plugin": {
+      "Name": "PilotsDeck",
+      "UUID": "com.extension.pilotsdeck",
+      "Version": "0.9.4.0"
+     },
+     "Resources": null,
+     "Settings": {
+      "settingsStore": {
+       "ActionCommands": {
+        "DIAL_DOWN": {},
+        "DIAL_LEFT": {},
+        "DIAL_LEFT_PRESSED": {},
+        "DIAL_RIGHT": {},
+        "DIAL_RIGHT_PRESSED": {},
+        "DIAL_UP": {},
+        "KEY_DOWN": {
+         "0": {
+          "Address": "B:fmc_c750_1_keyboard_x",
+          "AnyCondition": false,
+          "CommandDelay": 25,
+          "CommandType": 13,
+          "Conditions": {},
+          "DeckCommandType": 0,
+          "DoNotRequestBvar": true,
+          "Name": "",
+          "ResetDelay": 100,
+          "ResetSwitch": false,
+          "ResetValue": "",
+          "TickDelay": 15,
+          "TimeAfterLastDown": 0,
+          "UseCommandDelay": false,
+          "UseXpCommandOnce": true,
+          "WriteValue": ""
+         }
+        },
+        "KEY_UP": {},
+        "TOUCH_TAP": {}
+       },
+       "ActionDelays": {
+        "DIAL_DOWN": 15,
+        "DIAL_LEFT": 15,
+        "DIAL_LEFT_PRESSED": 15,
+        "DIAL_RIGHT": 15,
+        "DIAL_RIGHT_PRESSED": 15,
+        "DIAL_UP": 15,
+        "KEY_DOWN": 15,
+        "KEY_UP": 15,
+        "TOUCH_TAP": 15
+       },
+       "BUILD_VERSION": 11,
+       "CanvasSize": [
+        144,
+        144
+       ],
+       "DisplayElements": {
+        "0": {
+         "Center": 3,
+         "Color": "#ffffff",
+         "DrawImageBackground": false,
+         "ElementType": 2,
+         "FontName": "Arial",
+         "FontSize": 12,
+         "FontStyle": 0,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/C750/c750_cdu_square.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        },
+        "1": {
+         "Center": 0,
+         "Color": "#F0ECDE",
+         "DrawImageBackground": false,
+         "ElementType": 4,
+         "FontName": "Barlow Semi Condensed",
+         "FontSize": 52,
+         "FontStyle": 1,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/Empty.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "X",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        }
+       },
+       "IsNewModel": false
+      }
+     },
+     "State": 0,
+     "States": [
+      {
+       "FontFamily": "",
+       "FontSize": 10,
+       "FontStyle": "",
+       "FontUnderline": false,
+       "OutlineThickness": 2,
+       "ShowTitle": true,
+       "TitleAlignment": "top",
+       "TitleColor": "#ffffff",
+       "Title": ""
+      }
+     ],
+     "UUID": "com.extension.pilotsdeck.action.meta"
+    },
+    "1,0": {
+     "ActionID": "1b475a09-82f3-5781-bda4-2b07d819be64",
+     "LinkedTitle": true,
+     "Name": "Composite Action",
+     "Plugin": {
+      "Name": "PilotsDeck",
+      "UUID": "com.extension.pilotsdeck",
+      "Version": "0.9.4.0"
+     },
+     "Resources": null,
+     "Settings": {
+      "settingsStore": {
+       "ActionCommands": {
+        "DIAL_DOWN": {},
+        "DIAL_LEFT": {},
+        "DIAL_LEFT_PRESSED": {},
+        "DIAL_RIGHT": {},
+        "DIAL_RIGHT_PRESSED": {},
+        "DIAL_UP": {},
+        "KEY_DOWN": {
+         "0": {
+          "Address": "B:fmc_c750_1_keyboard_y",
+          "AnyCondition": false,
+          "CommandDelay": 25,
+          "CommandType": 13,
+          "Conditions": {},
+          "DeckCommandType": 0,
+          "DoNotRequestBvar": true,
+          "Name": "",
+          "ResetDelay": 100,
+          "ResetSwitch": false,
+          "ResetValue": "",
+          "TickDelay": 15,
+          "TimeAfterLastDown": 0,
+          "UseCommandDelay": false,
+          "UseXpCommandOnce": true,
+          "WriteValue": ""
+         }
+        },
+        "KEY_UP": {},
+        "TOUCH_TAP": {}
+       },
+       "ActionDelays": {
+        "DIAL_DOWN": 15,
+        "DIAL_LEFT": 15,
+        "DIAL_LEFT_PRESSED": 15,
+        "DIAL_RIGHT": 15,
+        "DIAL_RIGHT_PRESSED": 15,
+        "DIAL_UP": 15,
+        "KEY_DOWN": 15,
+        "KEY_UP": 15,
+        "TOUCH_TAP": 15
+       },
+       "BUILD_VERSION": 11,
+       "CanvasSize": [
+        144,
+        144
+       ],
+       "DisplayElements": {
+        "0": {
+         "Center": 3,
+         "Color": "#ffffff",
+         "DrawImageBackground": false,
+         "ElementType": 2,
+         "FontName": "Arial",
+         "FontSize": 12,
+         "FontStyle": 0,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/C750/c750_cdu_square.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        },
+        "1": {
+         "Center": 0,
+         "Color": "#F0ECDE",
+         "DrawImageBackground": false,
+         "ElementType": 4,
+         "FontName": "Barlow Semi Condensed",
+         "FontSize": 52,
+         "FontStyle": 1,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/Empty.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "Y",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        }
+       },
+       "IsNewModel": false
+      }
+     },
+     "State": 0,
+     "States": [
+      {
+       "FontFamily": "",
+       "FontSize": 10,
+       "FontStyle": "",
+       "FontUnderline": false,
+       "OutlineThickness": 2,
+       "ShowTitle": true,
+       "TitleAlignment": "top",
+       "TitleColor": "#ffffff",
+       "Title": ""
+      }
+     ],
+     "UUID": "com.extension.pilotsdeck.action.meta"
+    },
+    "2,0": {
+     "ActionID": "c2c1ef95-a7fc-5d9c-bf88-be824cccc019",
+     "LinkedTitle": true,
+     "Name": "Composite Action",
+     "Plugin": {
+      "Name": "PilotsDeck",
+      "UUID": "com.extension.pilotsdeck",
+      "Version": "0.9.4.0"
+     },
+     "Resources": null,
+     "Settings": {
+      "settingsStore": {
+       "ActionCommands": {
+        "DIAL_DOWN": {},
+        "DIAL_LEFT": {},
+        "DIAL_LEFT_PRESSED": {},
+        "DIAL_RIGHT": {},
+        "DIAL_RIGHT_PRESSED": {},
+        "DIAL_UP": {},
+        "KEY_DOWN": {
+         "0": {
+          "Address": "B:fmc_c750_1_keyboard_z",
+          "AnyCondition": false,
+          "CommandDelay": 25,
+          "CommandType": 13,
+          "Conditions": {},
+          "DeckCommandType": 0,
+          "DoNotRequestBvar": true,
+          "Name": "",
+          "ResetDelay": 100,
+          "ResetSwitch": false,
+          "ResetValue": "",
+          "TickDelay": 15,
+          "TimeAfterLastDown": 0,
+          "UseCommandDelay": false,
+          "UseXpCommandOnce": true,
+          "WriteValue": ""
+         }
+        },
+        "KEY_UP": {},
+        "TOUCH_TAP": {}
+       },
+       "ActionDelays": {
+        "DIAL_DOWN": 15,
+        "DIAL_LEFT": 15,
+        "DIAL_LEFT_PRESSED": 15,
+        "DIAL_RIGHT": 15,
+        "DIAL_RIGHT_PRESSED": 15,
+        "DIAL_UP": 15,
+        "KEY_DOWN": 15,
+        "KEY_UP": 15,
+        "TOUCH_TAP": 15
+       },
+       "BUILD_VERSION": 11,
+       "CanvasSize": [
+        144,
+        144
+       ],
+       "DisplayElements": {
+        "0": {
+         "Center": 3,
+         "Color": "#ffffff",
+         "DrawImageBackground": false,
+         "ElementType": 2,
+         "FontName": "Arial",
+         "FontSize": 12,
+         "FontStyle": 0,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/C750/c750_cdu_square.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        },
+        "1": {
+         "Center": 0,
+         "Color": "#F0ECDE",
+         "DrawImageBackground": false,
+         "ElementType": 4,
+         "FontName": "Barlow Semi Condensed",
+         "FontSize": 52,
+         "FontStyle": 1,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/Empty.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "Z",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        }
+       },
+       "IsNewModel": false
+      }
+     },
+     "State": 0,
+     "States": [
+      {
+       "FontFamily": "",
+       "FontSize": 10,
+       "FontStyle": "",
+       "FontUnderline": false,
+       "OutlineThickness": 2,
+       "ShowTitle": true,
+       "TitleAlignment": "top",
+       "TitleColor": "#ffffff",
+       "Title": ""
+      }
+     ],
+     "UUID": "com.extension.pilotsdeck.action.meta"
+    },
+    "3,0": {
+     "ActionID": "4524274a-691e-5823-85a0-e33351a781ee",
+     "LinkedTitle": true,
+     "Name": "Composite Action",
+     "Plugin": {
+      "Name": "PilotsDeck",
+      "UUID": "com.extension.pilotsdeck",
+      "Version": "0.9.4.0"
+     },
+     "Resources": null,
+     "Settings": {
+      "settingsStore": {
+       "ActionCommands": {
+        "DIAL_DOWN": {},
+        "DIAL_LEFT": {},
+        "DIAL_LEFT_PRESSED": {},
+        "DIAL_RIGHT": {},
+        "DIAL_RIGHT_PRESSED": {},
+        "DIAL_UP": {},
+        "KEY_DOWN": {
+         "0": {
+          "Address": "B:fmc_c750_1_button_sp",
+          "AnyCondition": false,
+          "CommandDelay": 25,
+          "CommandType": 13,
+          "Conditions": {},
+          "DeckCommandType": 0,
+          "DoNotRequestBvar": true,
+          "Name": "",
+          "ResetDelay": 100,
+          "ResetSwitch": false,
+          "ResetValue": "",
+          "TickDelay": 15,
+          "TimeAfterLastDown": 0,
+          "UseCommandDelay": false,
+          "UseXpCommandOnce": true,
+          "WriteValue": ""
+         }
+        },
+        "KEY_UP": {},
+        "TOUCH_TAP": {}
+       },
+       "ActionDelays": {
+        "DIAL_DOWN": 15,
+        "DIAL_LEFT": 15,
+        "DIAL_LEFT_PRESSED": 15,
+        "DIAL_RIGHT": 15,
+        "DIAL_RIGHT_PRESSED": 15,
+        "DIAL_UP": 15,
+        "KEY_DOWN": 15,
+        "KEY_UP": 15,
+        "TOUCH_TAP": 15
+       },
+       "BUILD_VERSION": 11,
+       "CanvasSize": [
+        144,
+        144
+       ],
+       "DisplayElements": {
+        "0": {
+         "Center": 3,
+         "Color": "#ffffff",
+         "DrawImageBackground": false,
+         "ElementType": 2,
+         "FontName": "Arial",
+         "FontSize": 12,
+         "FontStyle": 0,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/C750/c750_cdu_square.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        },
+        "1": {
+         "Center": 0,
+         "Color": "#F0ECDE",
+         "DrawImageBackground": false,
+         "ElementType": 4,
+         "FontName": "Barlow Semi Condensed",
+         "FontSize": 34,
+         "FontStyle": 1,
+         "GaugeAngleStart": 135,
+         "GaugeAngleSweep": 180,
+         "GaugeColorRanges": [],
+         "GaugeFixedMarkers": true,
+         "GaugeFixedRanges": false,
+         "GaugeIsArc": false,
+         "GaugeMarkers": [],
+         "GaugeRangeMarkers": [],
+         "GaugeRevereseDirection": false,
+         "GaugeSizeAddress": "",
+         "GaugeValueMax": 100,
+         "GaugeValueMin": 0,
+         "GaugeValueScale": 1,
+         "Image": "Images/Empty.png",
+         "IsNewModel": false,
+         "LineSize": 2,
+         "Manipulators": {},
+         "Name": "",
+         "Position": [
+          0,
+          0
+         ],
+         "PrimitiveType": 2,
+         "Rotation": 0,
+         "Scale": 0,
+         "Size": [
+          144,
+          144
+         ],
+         "Text": "SP",
+         "TextHorizontalAlignment": 1,
+         "TextVerticalAlignment": 1,
+         "Transparency": 1,
+         "UseGaugeDynamicSize": false,
+         "ValueAddress": "",
+         "ValueFormat": {
+          "DecodeBCD": false,
+          "Digits": -1,
+          "DigitsTrailing": -1,
+          "FormatString": "",
+          "InsertSign": false,
+          "InsertSpace": false,
+          "LimitDigits": false,
+          "Mappings": {},
+          "Offset": 0,
+          "OffsetFirst": false,
+          "Round": -1,
+          "RoundCeiling": false,
+          "RoundFloor": false,
+          "Scalar": 1,
+          "SubIndex": -1,
+          "SubLength": 0,
+          "TypePreferrence": 1,
+          "UseAbsoluteValue": false
+         }
+        }
+       },
+       "IsNewModel": false
+      }
+     },
+     "State": 0,
+     "States": [
+      {
+       "FontFamily": "",
+       "FontSize": 10,
+       "FontStyle": "",
+       "FontUnderline": false,
+       "OutlineThickness": 2,
+       "ShowTitle": true,
+       "TitleAlignment": "top",
+       "TitleColor": "#ffffff",
+       "Title": ""
+      }
+     ],
+     "UUID": "com.extension.pilotsdeck.action.meta"
+    }
+   },
+   "Type": "Keypad"
+  },
+  {
+   "Actions": {},
+   "Type": "Encoder"
+  }
+ ],
+ "Icon": "",
+ "Name": "A-Z 4/4"
+}

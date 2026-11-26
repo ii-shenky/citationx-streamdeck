@@ -1,0 +1,23 @@
+{
+  "Device": {
+    "Model": "20GBX9901",
+    "UUID": ""
+  },
+  "InstalledByPluginUUID": "com.extension.pilotsdeck",
+  "Name": "Citation X XL",
+  "Pages": {
+    "Current": "b7619b8b-308b-5728-ab55-6aeff4331c5e",
+    "Default": "430f4d1e-6e3a-589b-ac41-87fcda2bfeb1",
+    "Pages": [
+      "b7619b8b-308b-5728-ab55-6aeff4331c5e",
+      "7819a547-cb14-551a-9e6d-9606aa398298",
+      "2739609d-706b-5cd6-bd06-b1bfca035b4c",
+      "fd434aad-0bf4-5b6e-aea9-9808f2b4b995",
+      "8e3b8213-f3db-5ed1-a1d2-7a5d1ecbe1c2",
+      "c5008e93-dd94-5609-b304-202a4fc23724",
+      "43012c4f-71ec-5547-9edc-911a25c3a83c"
+    ]
+  },
+  "PreconfiguredName": "Profiles/Citation X XL",
+  "Version": "3.0"
+}
