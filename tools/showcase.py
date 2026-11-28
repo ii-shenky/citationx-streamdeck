@@ -205,5 +205,61 @@ def main():
         f = out / f"citx_xl_{name.replace('/', '').lower()}.png"; img.save(f); print(f)
 
 
+
+
+# ---- live captures: the Stream Deck app window (PrintWindow) with the sim running -------------------------------------
+def grid_from_capture(cap):
+    """Key tile origin, pitch and size in a capture of the Stream Deck app. Measured on the app maximised on a 4K screen
+    (3862 x 2110 window); a capture of another size is scaled from it."""
+    k = cap.width / 3862
+    return round(1087 * k), round(245 * k), round(141 * k), round(117 * k)
+
+
+def device_from_capture(cap):
+    """The captured keys and strip, re-seated in the drawn Stream Deck + XL body (same look as device())."""
+    import math
+    x0, y0, pitch, size = grid_from_capture(cap)
+    inset = 4; K = size - 2 * inset; gap = round(K * GAP / KEY); pad = round(K * 70 / KEY)
+    tiles = {(c, r): cap.crop((x0 + c * pitch + inset, y0 + r * pitch + inset, x0 + c * pitch + size - inset, y0 + r * pitch + size - inset))
+             for c in range(9) for r in range(4)}
+    k = cap.width / 3862                                           # the strip box, measured like the key grid
+    strip = cap.crop((round(1092 * k), round(814 * k), round(2326 * k), round(913 * k)))
+    dial = round(K * DIAL / KEY)
+    W = 9 * K + 8 * gap + 2 * pad
+    H = pad + 4 * K + 3 * gap + round(K * 46 / KEY) + strip.height + round(K * 40 / KEY) + dial + pad
+    body = Image.new('RGBA', (W, H)); bd = ImageDraw.Draw(body)
+    for i in range(H):
+        c = round(30 - 14 * i / H); bd.line([(0, i), (W, i)], fill=(c, c + 1, c + 4, 255))
+    body = rounded(body, round(K * 46 / KEY)); bd = ImageDraw.Draw(body)
+    bd.rounded_rectangle([1, 1, W - 2, H - 2], round(K * 46 / KEY), outline=(70, 72, 78, 255), width=2)
+    for (c, r), t in tiles.items():
+        X, Y = pad + c * (K + gap), pad + r * (K + gap)
+        bd.rounded_rectangle([X - 4, Y - 4, X + K + 4, Y + K + 4], 18, fill=(8, 8, 10, 255))
+        body.alpha_composite(rounded(t.convert('RGBA'), round(K * 18 / KEY)), (X, Y))
+    sy = pad + 4 * K + 3 * gap + round(K * 46 / KEY); sx = (W - strip.width) // 2
+    bd.rounded_rectangle([sx - 7, sy - 7, sx + strip.width + 7, sy + strip.height + 7], 12, fill=(8, 8, 10, 255))
+    body.alpha_composite(rounded(strip.convert('RGBA'), 8), (sx, sy))
+    seg = strip.width / 6; dy = sy + strip.height + round(K * 40 / KEY)
+    for i in range(6):
+        cx = sx + seg * (i + 0.5); cy = dy + dial / 2; r = dial / 2
+        bd.ellipse([cx - r - 4, cy - r - 4, cx + r + 4, cy + r + 4], fill=(6, 6, 8, 255))
+        bd.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(48, 50, 55, 255))
+        for k in range(48):
+            ang = 2 * math.pi * k / 48
+            bd.line([(cx + (r - 6) * math.cos(ang), cy + (r - 6) * math.sin(ang)), (cx + r * math.cos(ang), cy + r * math.sin(ang))], fill=(30, 31, 35, 255), width=2)
+        bd.ellipse([cx - r + 9, cy - r + 9, cx + r - 9, cy + r - 9], fill=(36, 37, 41, 255))
+        bd.arc([cx - r + 9, cy - r + 9, cx + r - 9, cy + r - 9], 200, 320, fill=(72, 74, 80, 255), width=2)
+    return body
+
+
+def live(capture, out, page, subtitle):
+    """Poster from a live capture: python3 tools/showcase.py --live <capture.png> <out.png> <PAGE> <subtitle>"""
+    img = poster(device_from_capture(Image.open(capture).convert('RGB')), 'FlightFX Citation X  ·  Stream Deck + XL', subtitle, page)
+    img.save(out); print(out)
+
+
 if __name__ == '__main__':
-    main()
+    if sys.argv[1:2] == ['--live']:
+        live(*sys.argv[2:6])
+    else:
+        main()
